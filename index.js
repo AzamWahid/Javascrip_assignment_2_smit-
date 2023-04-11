@@ -40,10 +40,7 @@ used as the text content of the new paragraph element.*/
 function addElement(text) {
     const paragraph = document.createElement('p');
     paragraph.innerText = text;
-    document.body.appendChild(paragraph);
-    paragraph.style.position = "absolute";
-    paragraph.style.bottom = "1px";
-
+    document.body.append(paragraph);
 }
 addElement("My Name is Muhammad Azam");
 
